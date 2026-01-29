@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Build a Complete Registration Form</title>
+	</head>
+
+	<body>
+		<section>
+			<form action="#" method="post" name="Registration" autocomplete="on">
+				<fieldset>
+					<legend>Application Form</legend>
+					<fieldset>
+						<legend>Account Details</legend>
+						<label>
+							Username:
+							<input type="text" id="username" required name="username" />
+						</label>
+						<label>
+							Email:
+							<input type="email" id="email" name="email" placeholder="you@example.com" required />
+						</label>
+						<br />
+						<label>
+							Password:
+							<input type="password" id="password" required name="password" />
+						</label>
+						<label>
+							Confirm Password:
+							<input type="password" id="passwordConfirm" required name="passwordConfirm" />
+						</label>
+					</fieldset>
+					<fieldset>
+						<legend>Personal Info</legend>
+						<label>
+							PreFix:
+							<input type="text" max="5" maxlength="5" name="PreFix" />
+						</label>
+						<label>
+							First Name:
+							<input type="text" name="FirstName" />
+						</label>
+						<label>
+							Last Name:
+							<input type="text" name="LastName" />
+						</label>
+						<label>
+							Suffix:
+							<input type="text" max="5" maxlength="5" name="Suffix" />
+						</label>
+						<label>
+							Zip:
+							<input type="number" max="5" maxlength="5" pattern="xxxxx" placeholder="00000" name="zip" />
+						</label>
+						<label>
+							Age:
+							<input type="number" id="age" name="age" max="120" min="13" required />
+						</label>
+						<label for="bio">
+							Short Bio:
+							<textarea
+								id="bio"
+								name="bio"
+								rows="4"
+								cols="50"
+								maxlength="500"
+								name="bio"
+								placeholder="Tell us about yourself..."></textarea>
+						</label>
+					</fieldset>
+					<fieldset>
+						<legend>Preferences</legend>
+
+						<label for="country">Country:</label>
+						<select id="country" name="country" required>
+							<option value="">-- Select a country --</option>
+							<option value="us">United States</option>
+							<option value="ca">Canada</option>
+							<option value="uk">United Kingdom</option>
+							<option value="au">Australia</option>
+							<option value="other">Other</option>
+						</select>
+
+						<label for="role">Role:</label>
+						<select id="role" name="role" required>
+							<option value="">-- Select your role --</option>
+							<option value="student">Student</option>
+							<option value="professional">Professional</option>
+							<option value="educator">Educator</option>
+							<option value="hobbyist">Hobbyist</option>
+							<option value="other">Other</option>
+						</select>
+
+						<label>
+							<input type="checkbox" id="newsletter" name="newsletter" value="yes" />
+							Subscribe to newsletter
+						</label>
+					</fieldset>
+					<fieldset>
+						<legend>How Did You Hear About Us?</legend>
+
+						<label>
+							<input type="radio" id="source-search" name="source" value="search" required />
+							Search Engine
+						</label>
+
+						<label>
+							<input type="radio" id="source-social" name="source" value="social" />
+							Social Media
+						</label>
+
+						<label>
+							<input type="radio" id="source-friend" name="source" value="friend" />
+							Friend/Referral
+						</label>
+
+						<label>
+							<input type="radio" id="source-ad" name="source" value="ad" />
+							Advertisement
+						</label>
+
+						<label>
+							<input type="radio" id="source-other" name="source" value="other" />
+							Other
+						</label>
+					</fieldset>
+				</fieldset>
+				<button type="submit">Register</button>
+				<button type="reset">Clear Form</button>
+			</form>
+		</section>
+	</body>
+</html>
